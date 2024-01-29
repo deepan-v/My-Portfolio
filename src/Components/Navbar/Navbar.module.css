@@ -1,0 +1,166 @@
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding: 10px 15px;
+    min-height: 70px;
+    
+  position: relative;
+  z-index: 1;
+  
+}
+
+.NavbarList{
+    display: flex;
+    gap: 20px;
+   
+    list-style-type: none; 
+   
+}
+
+ .Link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 500ms;
+      transition-property: color;
+     padding: 2px 10px;
+    font-weight: 400px;
+}
+
+.Active :nth-child(1):before{
+  position: absolute;
+  bottom: 20px;
+  content: '';
+  width: 2%;
+  height: 6px;
+  border-bottom:2px solid rgb(181, 179, 179) ;
+}
+
+
+
+.ForNavigate{
+  color: rgb(125, 124, 124);
+}
+
+.Link:before{
+  position: absolute;
+  content: '';
+  width: 0%;
+  bottom: 20px;
+  height: 1px;
+  border-bottom: 2px solid rgb(140, 138, 138);
+  transition-duration: 500ms;
+  transition-property: width ;
+}
+
+.Link:hover{
+  color: rgb(120, 120, 120);
+}
+
+.Link:hover:before{
+  width: 2%;
+}
+ 
+
+.ForIcons{
+    display: none;
+    cursor: pointer;
+}
+
+ .PortFolioBorder::before {
+      top: 12px;
+        left: 4px;
+  position: absolute;
+    content: "";
+      height: 25px;
+      width: 25px;
+      border-left: solid #0a0a0a 3px;
+      border-top: solid #000000 3px;
+  
+ 
+}
+
+ .PortFolioBorder::after {
+    top: 27px;
+      left: 104px;
+  position: absolute;
+    content: "";
+      height: 25px;
+      width: 25px;
+      border-bottom: solid #0a0a0a 3px;
+      border-right: solid #000000 3px;
+  
+ 
+}
+
+
+@media all and (max-width:800px) {
+      .ForIcons{
+        display: block;
+                margin-top: 7px;
+      }
+      .light{
+        margin-top: 7px;
+      }
+
+          .NavbarList{
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 90vh;
+            position: absolute;
+            gap: 10px;
+            top: 75px;
+            right: 20px;
+            background-color: rgb(50, 49, 49);
+            transition-duration: 0.5s ;
+            transition-property: top;
+            width: 200px;
+            max-height: 250px;
+          }
+          nav{
+            width: 100%;
+          }
+          
+            .Active :nth-child(1):before {
+              position: absolute;
+              bottom: 20px;
+              content: '';
+              width: 2%;
+              height: 6px;
+              border-bottom: 0px solid rgb(181, 179, 179);
+            }
+
+              .Link:hover:before {
+                width: 0%;
+              }
+
+
+          .Link{
+            color: white;
+          }
+
+                    .ForNavigate {
+                      color: rgb(125, 124, 124);
+                    }
+
+} 
+
+ @media all and (max-width:1300px) {
+    nav {
+        width: 100%;
+      }
+ }
+
+ .Slide {
+     top: -300px;
+ }
+
+
+

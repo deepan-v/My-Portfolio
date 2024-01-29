@@ -1,0 +1,116 @@
+
+.ProjectContainer{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+
+.Projects{
+   /* border: 1px solid red; */
+   width: 200px;
+   border: 2px solid gray;
+   border-radius: 10px;
+   /* height: 206px; */
+-webkit-box-shadow: 5px 6px 16px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 6px 16px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 6px 16px -8px rgba(0, 0, 0, 0.75);  
+    position: relative;
+    transition-duration: 500ms;
+    transition-property: transform;
+    
+}
+
+.Projects:hover{
+    transform: scale(1.01);
+   
+}
+
+.ProjectImg{
+    /* padding: 20px; */
+    width: 100%;
+    border-radius: 8px;
+    background-size: cover;
+     height: 150px;
+        
+  }
+
+  .IndexZ{
+    /* z-index: 100; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+
+.ProjectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+ 
+
+.projectimg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.LinkParaOpacity{
+    opacity: 0;
+    transition: 500ms;
+    overflow-x: hidden;
+    transform: translateX(-100%);
+}
+
+.LinkParaAnimate{
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0%);
+}
+
+
+.ForTextCenter{
+    position: absolute;
+    background: linear-gradient(to bottom, #1da1f2, rgba(84, 84, 84, 0));
+    top: 70%;
+     /* left: 30px; */
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 10px;
+    border-radius: 5px;
+    /* background-color: rgb(83, 83, 83); */
+    padding: 5px 5px;
+    color: rgb(76, 76, 76);
+    font-style: normal;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.LanDesign{
+    border:none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 300;
+    background-color: #1da1f2;
+    color: white;
+    transition: 300ms all;
+}
+
+.LanDesign:hover{
+   transform: translateY(-10px);
+}
+
+.AbtProject{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 0px;
+}

@@ -1,0 +1,184 @@
+
+.ContactBodyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+ 
+}
+
+.BodyContainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin: 50px 0px;
+    
+    
+}
+
+.Source{
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.FormHeading{
+  font-size: 20px;
+}
+
+.Form input{
+  padding: 12px 0px 12px 7px ;
+  border-radius: 5px;
+  font-size: 20px;
+
+}
+
+.FormHeading::before{
+  position: absolute;
+  content: '';
+  width: 100px;
+  gap: 11px;
+
+  top: 40px;
+  left: 0px;
+}
+
+.ContactHead::before{
+   position: absolute;
+   bottom: 0px;
+   left: 5px;
+    content: '';
+    border-bottom: 2px solid black;
+    height: 1px;
+    width: 25px;
+    transition: 500ms width;
+}
+
+.ContactHead:hover::before{
+  width: 105px;
+}
+
+.ContactHead{
+  width: 170px;
+}
+
+.Form{
+  width:450px ; 
+  padding: 20px 20px ;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+ 
+    margin-bottom: 40px;
+}
+
+.ForIcons{
+  filter: drop-shadow(20px 20px 1- 0px black);
+}
+
+#deepan{
+    filter: drop-shadow(20px 20px 1- 0px black);
+}
+
+textarea{
+  font-size: 20px;
+}
+
+.ErrorShow{
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+ 
+.FormBtn{
+  cursor:pointer ;
+    margin-top: 20px;
+    padding: 10px 3px;
+  border-radius: 5px;
+      font-size:15px;
+      font-weight:500;
+      letter-spacing:1px;
+      border:none;
+      background-color:#1da1f2;
+      color:white;
+      transition-duration: 500ms;
+      transition-property:background-color , box-shadow;
+      
+}
+
+.FormBtn:hover{
+  background-color: #0a9df8;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(139, 143, 245, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(139, 143, 245, 1);
+    box-shadow: 10px 10px 5px 0px rgba(139, 143, 245, 1); 
+}
+
+.FormBtn:active{
+  background-color: #57b9f6;
+}
+
+
+.Form >input{
+  background-color: rgb(187, 185, 185);
+  border: none;
+}
+
+textarea{
+  background-color: rgb(187, 185, 185);
+  border: none;
+}
+
+input::placeholder{
+  font-size: 18px;
+}
+textarea::placeholder{
+  font-size: 19px;
+}
+
+input:focus{
+  outline: none; /* or specify a different outline style, e.g., outline: 2px solid #007bff; */
+}
+
+textarea:focus{
+  outline: none;
+}
+
+
+.ToShowSent{
+  color: green;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.ContactAnimate{
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: 700ms all;
+}
+
+.ToAnimateItems{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.IconsMove{
+  transition: 500ms all;
+}
+
+.IconsMove:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
