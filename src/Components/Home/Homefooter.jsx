@@ -9,16 +9,16 @@ const Homefooter = () => {
     
   return (
    
-    <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'30px'}}>
+    <div  style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'30px'}}>
         <hr style={{width:'80%'}}/>
-         <div style={{display:'flex', gap:'60px', justifyContent:'center', flexWrap:'wrap'}}>
+         <div className={style.ForMediaQury} >
        {Icon.map((icon)=>{
         let {id , img ,Link ,name} = icon
         return(
             <div key={id} className={style.ToAlignfoot}>
               <div className={style.FooterLink}>
               <a target='blank' style={{marginTop:'6px'}} href={Link}> 
-                <img width={30}  src={img}/>
+                <img className={style.ForimgMedia} width={30}  src={img}/>
             </a>
             </div>
             <h5 > {name}</h5>

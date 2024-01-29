@@ -13,6 +13,7 @@ const AboutBody = () => {
       const elements = entries[0].isIntersecting;
       setToAnimate(elements);
       // console.log(elements);
+      // console.log(entries[0]);
     });
 
     Eduobserver.observe(GrabValueFronmEdu.current);
@@ -21,7 +22,7 @@ const AboutBody = () => {
     return () => {
       Eduobserver.disconnect();
     };
-  }, []);
+  },[]);
 
   return (
     <div className={style.EducationContainer}>

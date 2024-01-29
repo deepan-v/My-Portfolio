@@ -1,8 +1,6 @@
 
 
-body{
-    overflow-x: hidden;
-}
+
 
 .AboutHeader{
     display: flex;
@@ -10,6 +8,13 @@ body{
     position: relative;
 }
 
+
+
+.ToTrouble{
+    width: 80%;
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
 
 .AboutMe::before{
     position: absolute ;
@@ -227,6 +232,7 @@ body{
 .knowUnder{
     color: #090909;
     font-size:25px;
+    font-weight: 500;
 }
 
 .IconText{
@@ -361,7 +367,7 @@ body{
 }
 
 
-@media all and (max-width:500px){
+@media all and (max-width:550px){
     .Skillsection {
        width: 100%;
        /* border: 1px solid red; */
@@ -383,6 +389,10 @@ body{
     gap: 20px;
     }
 
+    .ToTrouble{
+        width: 100%;
+    }
+
     .PersonalData{
         width: 200px;
     }
@@ -390,6 +400,12 @@ body{
     .percentage{
        width: 40%;
     }
+
+        .knowUnder {
+            color: #090909;
+            font-size: 20px;
+            font-weight: 500;
+        }
 
     .ForAccomplisment{
        /* text-align: center; */

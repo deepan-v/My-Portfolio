@@ -14,12 +14,21 @@
     margin: 40px 10px 0px 10px;
 }
 
+.ForMediaQury{
+    display: flex;
+        gap: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
 .HomeLeft{
     max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
+
 
 .HomeBtn{
     display: flex;
@@ -31,6 +40,8 @@
     background-color: #1da1f2;
     text-decoration: none;
 }
+
+
 
 .LinkAlign{
     text-decoration: none;
@@ -137,6 +148,38 @@ p{
             justify-content: center;
             gap: 40px;
         }
+         
+        
+    
+}
+
+@media all and (max-width:500px){
+
+    .ForMediaQury {
+            gap: 35px;
+        }
+
+      .FooterLink{
+        width: 50px;
+            height: 50px;
+      }  
+
+      .LinkAlign{
+        padding: 7px 12px;
+      }
+
+      .ForimgMedia{
+        width: 24px;
+      }
+
+      .ParaToCenter{
+        text-align: center;
+      }
+
+      .HomeBtn{
+        justify-content: center;
+        gap: 20px;
+      }
 }
 
 

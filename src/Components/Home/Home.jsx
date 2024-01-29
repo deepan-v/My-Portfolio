@@ -35,7 +35,7 @@ const Home = () => {
       <div className={Style.HomeContainer}>
         <div className={Style.HomeLeft}>
            <h3> Hey, I'm  <b style={{color:'#1da1f2'}}>Deepan,</b>  Front-End Developer   &#128075;</h3>
-           <p style={{fontStyle:'normal', color:'rgb(91, 91, 91)'}}>
+           <p className={Style.ParaToCenter} style={{fontStyle:'normal', color:'rgb(91, 91, 91)'}}>
               My journey in the world of <b style={{color:'#1da1f2'}}>web development</b> is a story of continuous learning and innovation. 
               Explore my <b style={{color:'#1da1f2'}} >portfolio</b> to witness a collection of projects that showcase my dedication to crafting
               user-centric, engaging interfaces....

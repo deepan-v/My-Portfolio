@@ -32,7 +32,7 @@ const About = () => {
     },[])
 
   return (
-    <div style={{width:'80%', overflowX:'hidden'}}>
+    <div className={style.ToTrouble} >
       <div className={style.TopAlign}>
           <p className={style.knowUnder} style={{ marginBottom:'50px', fontStyle:'normal'}}>Get To Know More About Me</p>
       </div>

@@ -26,31 +26,36 @@ import HandleValidate from './Validate';
   let HandleChange = (e)=>{
     SetUsersData({...UsersData , [e.target.name]:e.target.value})
   }
-
-  let GrabData = ()=>{
+ 
+  let Deepan = ()=>{
       SetError(HandleValidate(UsersData))
   }
+
 
  
   const sendEmail = async (e) => {
 
-     SetBoolean(true)
     e.preventDefault();
-    console.log('object');
-   
-    console.log(ErrorHandling);
+     SetBoolean(true)
 
      if(ErrorHandling !== 0){
-       SetBoolean(false)
+      SetBoolean(false)
        return
     }
+
+    console.log('object');
 
     try {
         let HandleEmail = await emailjs.sendForm('service_cdrg1cj', 'template_tf6cnpt', form.current, 'qw3yoyD3f9qc8XRRZ')
          console.log(HandleEmail);
-         SetBoolean(false)
          SetToMount(true)
          setTimeout(()=>SetToMount(false),5000)
+         SetUsersData({
+           user_name:'',
+           user_email:'',
+           message:'',
+          })
+           SetBoolean(false)
          console.log('object');
 
         
@@ -75,10 +80,10 @@ import HandleValidate from './Validate';
       <input placeholder='E-Mail' onChange={HandleChange} value={UsersData.user_email} style={{marginBottom:'3px'}}type="text" name="user_email" />
       <p className={style.ErrorShow}>{Error.emailError}</p>
 
-      <textarea  placeholder='Message' onChange={HandleChange} value={UsersData.Usermessage} style={{marginBottom:'3px', borderRadius:'5px', height:'100px', padding:'5px'}} name="message" />
+      <textarea  placeholder='Message' onChange={HandleChange} value={UsersData.message} style={{marginBottom:'3px', borderRadius:'5px', height:'100px', padding:'5px'}} name="message" />
       <p className={style.ErrorShow}>{Error.message}</p>
 
-      <button className={style.FormBtn} disabled = {Boolean} type="submit" onClick={GrabData} > Send !</button>
+      <button className={style.FormBtn} onClick={Deepan} disabled ={Boolean} type="submit"  > Send !</button>
       <div className={style.ToShowSent}>{ToMount&&<div>Message Received , I'll Get Back You Soon  &#128077;</div>}</div>
     </form>
   );

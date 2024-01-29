@@ -66,7 +66,7 @@ function App() {
          <div className='NavToCenter' style={{}}>
             <Navbar/>
          </div>
-         <div ref={Deepan} style={{padding:'0px 10px'}}>
+         <div ref={Deepan} >
             <Routes>
             <Route path="/" element={<HomePage/>}/>
             <Route path="/About" element={<AboutPage/>}/>
